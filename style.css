@@ -41,3 +41,44 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.infobox {
+  float: right;
+  width: 310px;
+  margin: 0 0 16px 20px;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+  font-size: 14px;
+}
+
+.infobox .title {
+  background: #cedff2;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infobox td {
+  border-top: 1px solid #eaecf0;
+  padding: 8px;
+  vertical-align: top;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.toc {
+  background: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  display: inline-block;
+  padding: 12px 16px;
+  margin: 12px 0 18px;
+  font-size: 14px;
+}
