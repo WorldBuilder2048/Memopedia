@@ -17,9 +17,20 @@
     </div>
   </div>
 
-  <form style="margin-left:auto;" onsubmit="search(event)">
-    <input type="text" id="searchBox" placeholder="Search Memopedia">
-  </form>
+<form style="margin-left:auto; position:relative;">
+  <input type="text" id="searchBox" placeholder="Search Memopedia" oninput="search()" autocomplete="off">
+
+  <div id="searchResults" style="
+    position:absolute;
+    top:30px;
+    right:0;
+    width:300px;
+    background:white;
+    border:1px solid #a2a9b1;
+    display:none;
+    z-index:1000;
+  "></div>
+</form>
 </div>
 
 <div class="container">
@@ -58,24 +69,40 @@ const pages = [
   { title: "Cat and the X-ray Electrocardiograph", file: "cat_and_x-ray_electrocardiograph.html" }
 ];
 
-function search(e) {
-  e.preventDefault();
-
+function search() {
   const query = document.getElementById("searchBox").value.toLowerCase().trim();
+  const resultsBox = document.getElementById("searchResults");
 
-  if (!query) return;
-
-  for (let page of pages) {
-    if (page.title.toLowerCase().includes(query)) {
-      window.location.href = page.file;
-      return;
-    }
+  if (!query) {
+    resultsBox.style.display = "none";
+    return;
   }
 
-  alert("No article found");
+  let results = pages.filter(p =>
+    p.title.toLowerCase().includes(query)
+  );
+
+  if (results.length === 0) {
+    resultsBox.innerHTML = "<div style='padding:8px;'>No results</div>";
+  } else {
+    resultsBox.innerHTML = results.map(p =>
+      `<div style="padding:8px; cursor:pointer;" onclick="goTo('${p.file}')">
+        ${p.title}
+      </div>`
+    ).join("");
+  }
+
+  resultsBox.style.display = "block";
 }
 
-</script>
+function goTo(file) {
+  window.location.href = file;
+}
 
-</body>
-</html>
+document.addEventListener("click", function(e) {
+  if (!e.target.closest("form")) {
+    document.getElementById("searchResults").style.display = "none";
+  }
+});
+
+</script>
