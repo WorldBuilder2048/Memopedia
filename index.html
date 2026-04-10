@@ -1,52 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Мемопедия</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Memopedia</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="topbar">
   <img src="logo.png" class="logo">
+
   <div>
-    <div style="font-size:22px;">Мемопедия</div>
-    <div style="font-size:12px; color:gray;">
-      свободная энциклопедия абсурда
+    <div style="font-size:22px;">Memopedia</div>
+    <div style="font-size:12px; color:#54595d;">
+      the free encyclopedia of absurdity
     </div>
   </div>
+
+  <form style="margin-left:auto;" onsubmit="search(event)">
+    <input type="text" id="searchBox" placeholder="Search Memopedia">
+  </form>
 </div>
 
 <div class="container">
 
   <div class="sidebar">
-    <b>Навигация</b>
+    <b>Navigation</b>
     <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#" onclick="randomPage()">Случайная статья</a></li>
+      <li><a href="index.html">Main page</a></li>
     </ul>
   </div>
 
   <div class="content">
-    <h1>Добро пожаловать в Мемопедию</h1>
+    <h1>Welcome to Memopedia</h1>
 
     <p>
-      Мемопедия — это энциклопедия, где кошки едят технику,
-      а логика работает через раз.
+      Memopedia is a free encyclopedia where cats eat technology,
+      and logic works only sometimes.
     </p>
 
-    <h2>Статьи</h2>
+    <h2>Articles</h2>
     <ul>
-      <li>
-        <a href="article.html">
-          Кошка и рентгеноэлектрокардиограф
-        </a>
-      </li>
+      <li><a href="article.html">Cat and the X-ray Electrocardiograph</a></li>
     </ul>
+
   </div>
 
 </div>
 
-<script src="script.js"></script>
+<script>
+
+const pages = [
+  { title: "Cat and the X-ray Electrocardiograph", file: "cat_and_x-ray_electrocardiogrpah.html" }
+];
+
+function search(e) {
+  e.preventDefault();
+
+  const query = document.getElementById("searchBox").value.toLowerCase().trim();
+
+  if (!query) return;
+
+  for (let page of pages) {
+    if (page.title.toLowerCase().includes(query)) {
+      window.location.href = page.file;
+      return;
+    }
+  }
+
+  alert("No article found");
+}
+
+</script>
+
 </body>
 </html>
