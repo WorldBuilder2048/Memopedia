@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f8f9fa;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #a2a9b1;
+  padding: 10px 16px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #a2a9b1;
+  padding: 10px;
+}
+
+.content {
+  padding: 20px;
+  background: white;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
