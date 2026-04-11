@@ -65,7 +65,8 @@ function createFooter() {
 
   footer.innerHTML = `
     <div style="margin-bottom:5px;">
-      <a href="about.html">About Memopedia</a>
+      <a href="articles.html">Articles</a> | 
+      <a href="about.html">About</a>
     </div>
     Content is available under CC BY-SA 4.0.<br>
     Memopedia code is licensed under the MIT License.<br>
