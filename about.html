@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Memopedia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <img src="logo.png">
+
+  <div>
+    <div style="font-size:18px; font-family:Georgia, serif;">Memopedia</div>
+    <div style="font-size:12px; color:#54595d;">the free encyclopedia of absurdity</div>
+  </div>
+
+  <script src="main.js"></script>
+  <button onclick="goHome()" style="margin-left:10px;">Main page</button>
+
+  <form class="search-container" style="margin-left:auto; position:relative;">
+    <input type="text" id="searchBox" placeholder="Search Memopedia" oninput="search()" autocomplete="off">
+
+    <div id="searchResults" style="
+      position:absolute;
+      top:30px;
+      right:0;
+      width:300px;
+      background:white;
+      border:1px solid #a2a9b1;
+      display:none;
+      z-index:1000;
+    "></div>
+  </form>
+</div>
+
+<div class="container">
+
+  <div class="sidebar">
+    <b>Navigation</b>
+    <ul>
+      <li><a href="index.html">Main page</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>About Memopedia</h1>
+
+    <p>
+      <b>Memopedia</b> is a free encyclopedia dedicated to documenting the laws, anomalies, and unexplained phenomena of everyday life.
+    </p>
+
+    <p>
+      Unlike traditional encyclopedias, Memopedia focuses on events that are widely experienced but rarely explained, such as disappearing objects, tangled wires, and unexpected device failures.
+    </p>
+
+    <p>
+      Memopedia treats absurdity with seriousness, describing impossible or irrational events as if they were part of a consistent system.
+    </p>
+
+    <p>
+      All articles are interconnected and may describe different aspects of the same underlying structure of anomalies.
+    </p>
+
+    <h2>License</h2>
+
+    <p>
+      Content is available under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).
+    </p>
+
+    <p>
+      The source code of Memopedia is licensed under the MIT License.
+    </p>
+
+    <p>
+      © WorldBuilder2048
+    </p>
+
+    <h2>About the project</h2>
+
+    <p>
+      Memopedia is an independent project created by WorldBuilder2048.
+    </p>
+
+    <p>
+      No guarantees are made regarding the accuracy of reality itself.
+    </p>
+
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
