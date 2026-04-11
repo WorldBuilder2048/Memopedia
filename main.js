@@ -77,3 +77,42 @@ function createFooter() {
 
 // автоматически добавляем при загрузке
 window.addEventListener("DOMContentLoaded", createFooter);
+
+// ===== TOPBAR EXTENSIONS (search + main link) =====
+function enhanceTopbar() {
+  const topbar = document.querySelector(".topbar");
+  if (!topbar) return;
+
+  // --- ссылка на главную ---
+  const homeLink = document.createElement("a");
+  homeLink.href = "index.html";
+  homeLink.textContent = "Main page";
+  homeLink.style.marginLeft = "10px";
+
+  topbar.appendChild(homeLink);
+
+  // --- контейнер поиска ---
+  const form = document.createElement("form");
+  form.className = "search-container";
+  form.style.marginLeft = "auto";
+  form.style.position = "relative";
+
+  form.innerHTML = `
+    <input type="text" id="searchBox" placeholder="Search Memopedia" oninput="search()" autocomplete="off">
+    <div id="searchResults" style="
+      position:absolute;
+      top:30px;
+      right:0;
+      width:300px;
+      background:white;
+      border:1px solid #a2a9b1;
+      display:none;
+      z-index:1000;
+    "></div>
+  `;
+
+  topbar.appendChild(form);
+}
+
+// запускаем
+window.addEventListener("DOMContentLoaded", enhanceTopbar);
