@@ -92,6 +92,18 @@ function enhanceTopbar() {
 
   topbar.appendChild(homeLink);
 
+  // --- random article ---
+  const randomLink = document.createElement("a");
+  randomLink.href = "#";
+  randomLink.textContent = "Random article";
+  randomLink.style.marginLeft = "10px";
+  
+  randomLink.onclick = function(e) {
+    e.preventDefault();
+    randomArticle();
+  };
+  
+
   // --- контейнер поиска ---
   const form = document.createElement("form");
   form.className = "search-container";
@@ -114,17 +126,6 @@ function enhanceTopbar() {
 
   topbar.appendChild(form);
 
-  // --- random article ---
-  const randomLink = document.createElement("a");
-  randomLink.href = "#";
-  randomLink.textContent = "Random article";
-  randomLink.style.marginLeft = "10px";
-  
-  randomLink.onclick = function(e) {
-    e.preventDefault();
-    randomArticle();
-  };
-  
   topbar.appendChild(randomLink);
   
 }
