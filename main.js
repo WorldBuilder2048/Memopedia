@@ -103,7 +103,8 @@ function enhanceTopbar() {
     randomArticle();
   };
   
-
+  topbar.appendChild(randomLink);
+  
   // --- контейнер поиска ---
   const form = document.createElement("form");
   form.className = "search-container";
@@ -125,8 +126,6 @@ function enhanceTopbar() {
   `;
 
   topbar.appendChild(form);
-
-  topbar.appendChild(randomLink);
   
 }
 
