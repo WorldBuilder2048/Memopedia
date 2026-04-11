@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law of Meanness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar" style="display:flex; align-items:center; gap:12px;">
+  <img src="logo.png">
+  <div>
+    <div style="font-size:18px; font-family:Georgia, serif;">Memopedia</div>
+    <div style="font-size:12px; color:#54595d;">the free encyclopedia of absurdity</div>
+  </div>
+
+  <button onclick="goHome()" style="margin-left:10px;">Main page</button>
+
+  <form class="search-container" style="margin-left:auto; position:relative;">
+    <input type="text" id="searchBox" placeholder="Search Memopedia" oninput="search()" autocomplete="off">
+    <div id="searchResults" style="
+      position:absolute;
+      top:30px;
+      right:0;
+      width:300px;
+      background:white;
+      border:1px solid #a2a9b1;
+      display:none;
+      z-index:1000;
+    "></div>
+  </form>
+</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <div class="box">
+      <b>Navigation</b>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#mechanism">Mechanism</a></li>
+        <li><a href="#stages">Stages</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#science">Scientific debates</a></li>
+        <li><a href="#classification">Classification</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="content">
+    <h1>Law of Meanness</h1>
+
+    <div class="infobox">
+      <div class="title">Law of Meanness</div>
+      <div style="float:right; width:300px; margin:0 0 10px 20px; font-size:13px; color:#54595d;">
+        <img src="images/law_of_meanness.png">
+        <div>The moment when everything goes wrong at once</div>
+      </div>
+      <table>
+        <tr><td><b>Type</b></td><td>Universal anomaly</td></tr>
+        <tr><td><b>Participants</b></td><td>Any system, 1 human, infinite bad timing</td></tr>
+        <tr><td><b>Outcome</b></td><td>Maximum inconvenience</td></tr>
+        <tr><td><b>Main feature</b></td><td>Worst possible outcome occurs</td></tr>
+        <tr><td><b>Reliability</b></td><td>Absolute</td></tr>
+      </table>
+    </div>
+
+    <p id="summary">
+      <b>The Law of Meanness</b> is a fundamental principle stating that if something can go wrong, it will do so at the worst possible moment. The phenomenon applies universally across domestic, technological, and cognitive systems.
+    </p>
+
+    <p>
+      Unlike isolated anomalies, this law does not describe a single event, but rather governs the behavior of all other inconvenient phenomena.
+    </p>
+
+    <div class="toc">
+      <b>Contents</b>
+      <ol>
+        <li><a href="#mechanism">Mechanism</a></li>
+        <li><a href="#stages">Stages</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#science">Scientific debates</a></li>
+        <li><a href="#classification">Classification</a></li>
+      </ol>
+    </div>
+
+    <h2 id="mechanism">Mechanism</h2>
+    <p>
+      The mechanism of the Law of Meanness is believed to involve probability distortion. As the importance of a situation increases, the likelihood of negative outcomes rises disproportionately.
+    </p>
+
+    <p>
+      The law is directly connected to the 
+      <a href="law_of_disappearance_of_things.html">Law of Sudden Object Disappearance</a>,
+      as well as phenomena such as device failure and memory loss, which are considered specific manifestations of this broader principle.
+    </p>
+
+    <ul>
+      <li>timing becomes increasingly unfavorable;</li>
+      <li>multiple failures may occur simultaneously;</li>
+      <li>simple tasks become unexpectedly complex;</li>
+      <li>solutions become temporarily inaccessible.</li>
+    </ul>
+
+    <h2 id="stages">Stages</h2>
+    <ol>
+      <li><b>Preparation stage.</b> Everything appears under control.</li>
+      <li><b>Confidence stage.</b> The user believes success is guaranteed.</li>
+      <li><b>Trigger stage.</b> A critical moment is reached.</li>
+      <li><b>Failure cascade.</b> Multiple problems occur at once.</li>
+      <li><b>Panic stage.</b> The situation becomes unstable.</li>
+      <li><b>Aftermath.</b> Everything returns to normal too late.</li>
+    </ol>
+
+    <h2 id="effects">Effects</h2>
+    <ul>
+      <li>unexpected failures;</li>
+      <li>loss of time and control;</li>
+      <li>increased frustration;</li>
+      <li>repeated statements such as “why now?”.</li>
+    </ul>
+
+    <p>
+      In extreme cases, unrelated systems may fail simultaneously, reinforcing the perception that events are coordinated.
+    </p>
+
+    <h2 id="science">Scientific debates</h2>
+    <p>
+      Some researchers interpret the Law of Meanness as a statistical illusion, while others argue that the consistency of worst-case scenarios suggests a deeper underlying principle.
+    </p>
+
+    <p>
+      A controversial theory claims that reality itself prioritizes maximum inconvenience when observed.
+    </p>
+
+    <h2 id="classification">Classification</h2>
+    <ul>
+      <li><b>Minor case.</b> Small inconvenience.</li>
+      <li><b>Moderate case.</b> Noticeable disruption.</li>
+      <li><b>Severe case.</b> Multiple failures occur.</li>
+      <li><b>Critical case.</b> Everything goes wrong simultaneously.</li>
+    </ul>
+
+    <p>
+      The most extreme subtype is the <i>perfect storm event</i>, where all known anomalies activate at once.
+    </p>
+
+    <div class="footer">
+      Content is available under CC BY-SA 4.0.<br>
+      Memopedia code is licensed under the MIT License.
+    </div>
+
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
