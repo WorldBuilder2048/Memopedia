@@ -123,3 +123,16 @@ function randomArticle() {
   const random = pages[Math.floor(Math.random() * pages.length)];
   window.location.href = random.file;
 }
+
+// --- random article ---
+const randomLink = document.createElement("a");
+randomLink.href = "#";
+randomLink.textContent = "Random article";
+randomLink.style.marginLeft = "10px";
+
+randomLink.onclick = function(e) {
+  e.preventDefault();
+  randomArticle();
+};
+
+topbar.appendChild(randomLink);
