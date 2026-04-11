@@ -6,7 +6,8 @@ const pages = [
   { title: "Theory of the Missing Sock", file: "missing_sock.html" },
   { title: "Effect of Entering a Room and Forgetting Why", file: "forgot_why_entered.html" },
   { title: "Device That Stops Working When Needed", file: "device_failure_deadline.html" },
-  { title: "Phenomenon of Closet Overfilling", file: "closet_overflow.html" }
+  { title: "Phenomenon of Closet Overfilling", file: "closet_overflow.html" },
+  { title: "Law of Meanness", file: "law_of_meanness.html" }
 ];
 
 // ===== ПОИСК =====
