@@ -117,3 +117,9 @@ function enhanceTopbar() {
 
 // запускаем
 window.addEventListener("DOMContentLoaded", enhanceTopbar);
+
+// ===== RANDOM ARTICLE =====
+function randomArticle() {
+  const random = pages[Math.floor(Math.random() * pages.length)];
+  window.location.href = random.file;
+}
