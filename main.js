@@ -5,7 +5,8 @@ const pages = [
   { title: "Paradox of Tangled Wires", file: "tangled_wires.html" },
   { title: "Theory of the Missing Sock", file: "missing_sock.html" },
   { title: "Effect of Entering a Room and Forgetting Why", file: "forgot_why_entered.html" },
-  { title: "Device That Stops Working When Needed", file: "device_failure_deadline.html" }
+  { title: "Device That Stops Working When Needed", file: "device_failure_deadline.html" },
+  { title: "Phenomenon of Closet Overfilling", file: "closet_overflow.html" }
 ];
 
 // ===== ПОИСК =====
