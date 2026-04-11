@@ -7,7 +7,8 @@ const pages = [
   { title: "Effect of Entering a Room and Forgetting Why", file: "forgot_why_entered.html" },
   { title: "Device That Stops Working When Needed", file: "device_failure_deadline.html" },
   { title: "Phenomenon of Closet Overfilling", file: "closet_overflow.html" },
-  { title: "Law of Meanness", file: "law_of_meanness.html" }
+  { title: "Law of Meanness", file: "law_of_meanness.html" },
+  { title: "Law of Contradiction of Expectation", file: "law_of_contradiction.html" }
 ];
 
 // ===== ПОИСК =====
