@@ -8,7 +8,8 @@ const pages = [
   { title: "Device That Stops Working When Needed", file: "device_failure_deadline.html" },
   { title: "Phenomenon of Closet Overfilling", file: "closet_overflow.html" },
   { title: "Law of Meanness", file: "law_of_meanness.html" },
-  { title: "Law of Contradiction of Expectation", file: "law_of_contradiction.html" }
+  { title: "Law of Contradiction of Expectation", file: "law_of_contradiction.html" },
+  { title: "The Drawer of Random Things", file: "random_drawer.html" }
 ];
 
 // ===== ПОИСК =====
