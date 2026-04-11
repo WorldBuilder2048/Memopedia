@@ -10,7 +10,8 @@ const pages = [
   { title: "Law of Meanness", file: "law_of_meanness.html" },
   { title: "Law of Contradiction of Expectation", file: "law_of_contradiction.html" },
   { title: "The Drawer of Random Things", file: "random_drawer.html" },
-  { title: "The Alarm That Doesn’t Work When You Need It", file: "alarm_failure.html" }
+  { title: "The Alarm That Doesn’t Work When You Need It", file: "alarm_failure.html" },
+  { title: "The Phone That Rings Only When You Can’t Answer", file: "phone_wrong_time.html" }
 ];
 
 // ===== ПОИСК =====
