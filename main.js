@@ -9,7 +9,8 @@ const pages = [
   { title: "Phenomenon of Closet Overfilling", file: "closet_overflow.html" },
   { title: "Law of Meanness", file: "law_of_meanness.html" },
   { title: "Law of Contradiction of Expectation", file: "law_of_contradiction.html" },
-  { title: "The Drawer of Random Things", file: "random_drawer.html" }
+  { title: "The Drawer of Random Things", file: "random_drawer.html" },
+  { title: "The Alarm That Doesn’t Work When You Need It", file: "alarm_failure.html" }
 ];
 
 // ===== ПОИСК =====
