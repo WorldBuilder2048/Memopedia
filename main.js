@@ -57,3 +57,23 @@ document.addEventListener("click", function(e) {
 function goHome() {
   window.location.href = "index.html";
 }
+
+// ===== FOOTER (общий для всех страниц) =====
+function createFooter() {
+  const footer = document.createElement("div");
+  footer.className = "footer";
+
+  footer.innerHTML = `
+    <div style="margin-bottom:5px;">
+      <a href="about.html">About Memopedia</a>
+    </div>
+    Content is available under CC BY-SA 4.0.<br>
+    Memopedia code is licensed under the MIT License.<br>
+    © WorldBuilder2048
+  `;
+
+  document.body.appendChild(footer);
+}
+
+// автоматически добавляем при загрузке
+window.addEventListener("DOMContentLoaded", createFooter);
